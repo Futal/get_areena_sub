@@ -33,34 +33,25 @@ To run get_areena_sub with Python 2:
  - For pages in Swedish, it has the form: `https://arenan.yle.fi/<program-number>`
 
 
-## Subtitle file name
+## Resulting subtitle file name
 
-Subtitles are saved in the program folder with the following name format:
+Subtitles are saved in the program folder with the file name format 
+`<program name> (<subtitle type>).<language code>.srt`.
 
-    <program name> (<subtitle type>).<language code>.srt
+`<program name>` is retrieve from the webpage h1 title under the video. It is in Finnish or Swedish 
+depending on the URL used (areena or arenan). The name may not be as broadcasted (e.g. on a Finnish 
+page for a Yle Fem Swedish program).
 
-### `<program name>`:
-
-The program name is retrieve from the webpage h1 title under the video. 
-It is in Finnish or Swedish depending on the URL used (areena or arenan).
-The name may not be as broadcasted (e.g. on a Finnish page for a Yle Fem Swedish program).
-
-### `<subtitle type>`:
-
-Subtitle types are those displayed in the video player subtitle menu. The most
-common types are:
+`<subtitle type>` are those displayed in the video player subtitle menu. The most common types are:
 
  - `ohjelmatekstitys`: Finnish subtitles of a Finnish program
  - `käännöstekstitys`: Finnish translation subtitles 
  - `programtextning`: Swedish subtitles of a Swedish program
     
-### `<language code>`:
+`<language code>` can be either:
 
-It can be either:
  - `fi`: Finnish
  - `sv`: Swedish
-
-### `srt` file extension:
 
 Subtitles are saved in the SRT subtitle file format. It is the native file format
 used by the video player and no conversion happens.
