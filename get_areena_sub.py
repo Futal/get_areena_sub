@@ -1,4 +1,4 @@
-# /bin/python3
+# /bin/python2
 #
 # To retrieve srt subtitles from Yle Areena
 
@@ -22,7 +22,7 @@ page_urls = sys.argv[1:]
 
 for page_url in page_urls:
     driver.get(page_url)
-    title = driver.title.split('|')[0].strip()     
+    title = driver.title.split('|')[0].strip()
 
     play_button = driver.find_element_by_class_name('kWidgetPlayBtn')
     play_button.click()
