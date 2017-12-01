@@ -1,9 +1,10 @@
 # Get Yle Areena subtitles
 
 This small script download subtitles from Yle Areena, the website of the Finnish national broadcast company.
-Its primary goal was to learn using Selenium. It has be useful a couple of times when ripping my own DVDs if
-the OCR gave bad results for converting the DVD subtitles. It may also be useful if you want to create a 
-corpus of standard Finnish and spoken Finnish for linguistic studies.
+Its primary goal was to learn using Selenium and improving my skills in using Git and Python. It has be 
+useful a couple of times when ripping my own DVDs if the OCR gave bad results for converting the DVD 
+subtitles. It may also be useful if you want to create a corpus of standard Finnish and spoken Finnish 
+for linguistic studies.
 
 
 ## Installation
@@ -71,4 +72,4 @@ Subtitles can only be downloaded when you can watch the program with the HTML5 v
 Hence subtitles can neither be downloaded when the program is only available with the Flash video
 player, nor when the program is not available in your region (i.e. you do not have a Finnish IP
 address).
- 
+
